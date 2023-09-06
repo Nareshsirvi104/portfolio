@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <link rel="stylesheet" href="profile.css">
+    <title>KUSHAL'S PROFILE</title>
+    <style>
+        .header-button {
+            width: 100%;
+            height: 100px;
+            background-color: lightblue;
+            text-align: center;
+            line-height: 100px;
+            font-size: 24px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            border: none;
+            outline: none;
+        }
+
+        .header-button:hover {
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body class="b-g" id="background">
+
+    <button class="header-button" id="header">
+        <h2 class="h-1"><u>WELCOME TO MY PROFILE!!</u></h2>
+        <!-- <img src="https://img.freepik.com/free-vector/mysterious-mafia-man-smoking-cigarette_52683-34828.jpg?size=626&ext=jpg&ga=GA1.2.1270915799.1691566403&semt=sph" alt="">  -->
+    </button>
+
+    <img class="i-1" src="ds1.jpeg" alt="no">
+    <h2 class="h-2"><i>Kushal Jangid</i></h2>
+    <h4 class="h-4"><strong>-FRONT END DEVELOPER</strong></h4>
+    <u>
+        <h2>ABOUT ME-</h2>
+    </u>
+    <span>Hi, I'm Kushal! I am a passionate front-end developer with a strong interest in creative interactive and
+        user-friendly websites. I love experimenting with new technologies and turning ideas into beautiful and
+        functional web applications.</span>
+    <u>
+        <h2 class="c-i">CONTACT INFORMATION-</h2>
+    </u>
+    <span class="s-1"><u>EMAIL:</u> kushaljangid@google.com <br>
+        <u>PHONE NO.-</u>+91 6378211874
+        <br>
+        WEBSITES: www.kushal.com</span>
+    <ul>
+        <label for="skills"><u>SKILLS</u></label>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JAVASCRIPT</li>
+        <LI>BOOTSTRAP</LI>
+        <LI>REACTJS </LI>
+    </ul>
+    <footer style="text-align: center; background-color: black;color: white;">&copy;KUSHAL JANGID All Rights Reserved</footer>
+
+    <script>
+        var headerButton = document.getElementById("header");
+        var colors = ["red", "blue", "green", "purple", "orange"];
+
+        headerButton.addEventListener("click", function () {
+            var randomIndex = Math.floor(Math.random() * colors.length);
+            headerButton.style.backgroundColor = colors[randomIndex];
+        });
+        var backgroundbutton = document.getElementById("background");
+        var colors = ["red", "blue", "green", "purple", "orange"];
+
+        backgroundbutton.addEventListener("click", function () {
+            var randomIndex = Math.floor(Math.random() * colors.length);
+            backgroundbutton.style.backgroundColor = colors[randomIndex];
+        });
+    </script>
+    <script>
+        // get a refrence to the button and hader elements
+        const colorbutton = document.getElement
+    </script>
+
+</body>
+
+</html>
