@@ -36,7 +36,7 @@ const Home = () => {
             className="flex justify-center md:justify-start space-x-4"
           >
             <a
-    href="/Docs/NARESH_SIRVI_PIET22CS113.pdf"
+    href="/Docs/Naresh_Sirvi RESUME.pdf"
     download // This attribute tells the browser to download the file
     className="bg-accent-orange text-white font-bold py-3 px-6 rounded-md hover:bg-orange-600 transition-colors duration-300"
   >
