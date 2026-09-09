@@ -21,7 +21,7 @@ const projects = [
    {
     name: 'Rupee Ledger',
     description:'Expense Tracker is a full-stack app for tracking expenses, visualizing spending, setting budgets, and exporting records as CSV.',
-    tech: ['React', 'Node.js', 'Recharts','Vercel' + 'Render'],
+    tech: ['React', 'Node.js', 'Recharts','Vercel' ,'Render'],
     link: 'https://expense-tracker-kohl-five.vercel.app/',
     github: 'https://github.com/Nareshsirvi104/Expense-Tracker'
   },
