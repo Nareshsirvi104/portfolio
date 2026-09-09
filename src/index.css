@@ -16,3 +16,54 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+/* ---------- Custom scrollbar ---------- */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #10162b;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #ff652f, #ff3e9d);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #ff3e9d, #ff652f);
+}
+
+/* ---------- Reusable helpers ---------- */
+.gradient-text {
+  background: linear-gradient(90deg, #ff652f, #ff3e9d, #ff652f);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: gradient-x 6s ease infinite;
+}
+
+.glass {
+  background: rgba(17, 24, 48, 0.55);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glow-orange {
+  box-shadow: 0 0 40px -10px rgba(255, 101, 47, 0.6);
+}
+
+.text-shadow-glow {
+  text-shadow: 0 0 30px rgba(255, 101, 47, 0.35);
+}
+
+/* Selection color */
+::selection {
+  background: #ff652f;
+  color: #fff;
+}
+
+/* Simple fade/scale utility used by page-load transitions */
+.will-fade {
+  opacity: 0;
+}

@@ -24,32 +24,47 @@ const skills = [
 
 const Skills = () => {
   return (
-    <section id="skills" className="py-20 bg-black text-white">
+    <section id="skills" className="py-20 bg-black/40 text-white relative">
       <div className="container mx-auto px-6">
         {/* Section Heading and Subheading */}
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold mb-2">What I do</h2>
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.6 }}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-14"
+        >
+          <span className="text-accent-orange uppercase tracking-widest text-sm font-semibold">Toolbox</span>
+          <h2 className="text-4xl font-bold mb-2 mt-2">
+            What I <span className="gradient-text">do</span>
+          </h2>
           <p className="text-gray-400 max-w-2xl mx-auto">
-            Showcasing Measurable Proficiency: Highlighting Specific, Teachable Abilities and
-            Quantifiable Knowledge in my Portfolio.
+            Showcasing measurable proficiency: highlighting specific, teachable abilities and
+            quantifiable knowledge in my portfolio.
           </p>
-        </div>
+        </motion.div>
 
         {/* Skills Grid */}
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {skills.map((skill, index) => (
             <motion.div
               key={index}
-              className="flex flex-col items-center p-6 bg-gray-800 rounded-lg shadow-md cursor-pointer border border-transparent hover:border-gray-500 transition-colors duration-300"
+              className="group relative flex flex-col items-center p-6 glass rounded-xl shadow-md cursor-pointer border border-white/5 overflow-hidden"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.5 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
+              transition={{ duration: 0.5, delay: index * 0.07 }}
+              whileHover={{ y: -8, scale: 1.04 }}
             >
-              <div className="text-5xl text-white mb-4">
+              <div className="absolute inset-0 bg-gradient-to-br from-accent-orange/0 via-accent-orange/0 to-accent-pink/0 group-hover:from-accent-orange/10 group-hover:to-accent-pink/10 transition-all duration-300" />
+              <motion.div
+                className="text-5xl text-white mb-4 relative z-10"
+                whileHover={{ rotate: [0, -10, 10, -6, 0], scale: 1.15 }}
+                transition={{ duration: 0.5 }}
+              >
                 {skill.icon}
-              </div>
-              <h3 className="text-xl font-semibold text-white">
+              </motion.div>
+              <h3 className="text-xl font-semibold text-white relative z-10">
                 {skill.name}
               </h3>
             </motion.div>
